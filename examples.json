@@ -1,0 +1,86 @@
+[
+  {
+    "tags": ["overflows"],
+    "topics": ["Basic Types", "Mutability"],
+    "title": "i8 Basic Type",
+    "explainer": "",
+    "code": [
+      {
+        "sort": 1,
+        "link": "https://github.com/near-examples/rust-counter/blob/ce7e8df3d87bf0f695537d50de2a058de545f7ab/contract/src/lib.rs#L20-L23"
+      },
+      {
+        "sort": 2,
+        "link": "https://github.com/near-examples/rust-counter/blob/ce7e8df3d87bf0f695537d50de2a058de545f7ab/contract/src/lib.rs#L51-L60"
+      },
+      {
+        "sort": 3,
+        "link": "https://github.com/near-examples/rust-counter/blob/ce7e8df3d87bf0f695537d50de2a058de545f7ab/contract/src/lib.rs#L70-L79"
+      }
+    ],
+    "repo": "https://github.com/near-examples/rust-counter",
+    "sdk": { "language": "rust", "version": "near-sdk-rs@3.1.0" },
+    "difficulty": { "min": 1, "max": 3, "near": 1, "language": 1 }
+  },
+  {
+    "tags": ["LookupMap"],
+    "topics": ["Mutability"],
+    "title": "LookupMap Insert",
+    "explainer": "",
+    "code": [
+      {
+        "sort": 1,
+        "link": "https://github.com/near-examples/rust-status-message/blob/f47c092ca743071c5a5ea0b71de02517001cc3bc/src/lib.rs#L9-L11"
+      },
+      {
+        "sort": 2,
+        "link": "https://github.com/near-examples/rust-status-message/blob/f47c092ca743071c5a5ea0b71de02517001cc3bc/src/lib.rs#L23-L26"
+      }
+    ],
+    "repo": "https://github.com/near-examples/rust-status-message",
+    "sdk": { "language": "rust", "version": "near-sdk-rs@3.1.0" },
+    "difficulty": { "min": 1, "max": 3, "near": 1, "language": 1 }
+  },
+  {
+    "tags": ["enum", "cross contract calls", "promises", "nearcore"],
+    "topics": ["Compound Types"],
+    "title": "match with PromiseResult",
+    "explainer": "",
+    "code": [
+      {
+        "sort": 1,
+        "link": "https://github.com/near/nearcore/blob/354c7a5d24a2fc793573b690852359818860879d/runtime/near-vm-logic/src/types.rs#L37-L43"
+      },
+      {
+        "sort": 2,
+        "link": "https://github.com/ref-finance/ref-contracts/blob/2be596669c364265a0c0ec39b67e6c5cc1051fbb/ref-exchange/src/multi_fungible_token.rs#L191-L201"
+      }
+    ],
+    "repo": "https://github.com/ref-finance/ref-contracts",
+    "sdk": { "language": "rust", "version": "near-sdk-rs@3.1.0" },
+    "difficulty": { "min": 1, "max": 3, "near": 3, "language": 1 }
+  },
+  {
+    "tags": ["struct", "fungible token", "standards"],
+    "topics": ["Compound Types"],
+    "title": "FungibleToken Metadata struct",
+    "explainer": "",
+    "code": [
+      {
+        "sort": 1,
+        "link": "https://github.com/near/near-sdk-rs/blob/42f62384c3acd024829501ee86e480917da03896/near-contract-standards/src/fungible_token/metadata.rs#L7-L17"
+      },
+      {
+        "sort": 2,
+        "link": "https://github.com/near/near-sdk-rs/blob/master/examples/fungible-token/ft/src/lib.rs#L33-L36"
+      },
+      {
+        "sort": 3,
+        "link": "https://github.com/near/near-sdk-rs/blob/master/examples/fungible-token/ft/src/lib.rs#L51-L65"
+      }
+    ],
+    "repo": "https://github.com/near/near-sdk-rs",
+    "sdk": { "language": "rust", "version": "near-sdk-rs@3.1.0" },
+    "difficulty": { "min": 1, "max": 3, "near": 1, "language": 1 }
+  }
+]
