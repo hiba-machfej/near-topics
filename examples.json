@@ -42,8 +42,8 @@
     "difficulty": { "min": 1, "max": 3, "near": 1, "language": 1 }
   },
   {
-    "tags": ["enum", "cross contract calls", "promises", "nearcore"],
-    "topics": ["Compound Types"],
+    "tags": ["enum", "cross contract calls", "promises", "nearcore", "match"],
+    "topics": ["Compound Types", "Control Flow"],
     "title": "match with PromiseResult",
     "explainer": "",
     "code": [
@@ -82,5 +82,108 @@
     "repo": "https://github.com/near/near-sdk-rs",
     "sdk": { "language": "rust", "version": "near-sdk-rs@3.1.0" },
     "difficulty": { "min": 1, "max": 3, "near": 1, "language": 1 }
+  },
+  {
+    "tags": [],
+    "topics": ["Basic Types", "Mutability"],
+    "title": "Boolean Basic Type",
+    "explainer": "",
+    "code": [
+      {
+        "sort": 1,
+        "link": "https://github.com/near/core-contracts/blob/d84f7a924b79009d3f7aa4e577c07b08a0489dc9/staking-pool/src/lib.rs#L89-L117"
+      },
+      {
+        "sort": 2,
+        "link": "https://github.com/near/core-contracts/blob/d84f7a924b79009d3f7aa4e577c07b08a0489dc9/staking-pool/src/lib.rs#L464-L471"
+      },
+      {
+        "sort": 3,
+        "link": "https://github.com/near/core-contracts/blob/d84f7a924b79009d3f7aa4e577c07b08a0489dc9/staking-pool/src/lib.rs#L475-L482"
+      }
+    ],
+    "repo": "https://github.com/near/core-contracts",
+    "sdk": { "language": "rust", "version": "near-sdk-rs@2.0.0" },
+    "difficulty": { "min": 1, "max": 3, "near": 1, "language": 1 }
+  },
+  {
+    "tags": ["Vector", "match"],
+    "topics": ["Mutability", "Control Flow"],
+    "title": "Multiple Vector Pushes",
+    "explainer": "",
+    "code": [
+      {
+        "sort": 1,
+        "link": "https://github.com/near-examples/nft-exquisite-corpse/blob/e1e0759ffc7a3f3911b86dd79b2e3417e671e8f8/src/lib.rs#L62-L70"
+      },
+      {
+        "sort": 2,
+        "link": "https://github.com/near-examples/nft-exquisite-corpse/blob/e1e0759ffc7a3f3911b86dd79b2e3417e671e8f8/src/lib.rs#L103-L105"
+      },
+      {
+        "sort": 3,
+        "link": "https://github.com/near-examples/nft-exquisite-corpse/blob/e1e0759ffc7a3f3911b86dd79b2e3417e671e8f8/src/lib.rs#L241-L275"
+      }
+    ],
+    "repo": "https://github.com/near-examples/nft-exquisite-corpse",
+    "sdk": { "language": "rust", "version": "near-sdk-rs@3.1.0" },
+    "difficulty": { "min": 1, "max": 3, "near": 1, "language": 2 }
+  },
+  {
+    "tags": ["LookupMap", "match"],
+    "topics": ["Mutability"],
+    "title": "Multiple Vector Pushes",
+    "explainer": "",
+    "code": [
+      {
+        "sort": 1,
+        "link": "https://github.com/near-examples/token-factory/blob/a56667bf930d2316a911d6cc6f703a5a420739dd/contracts/factory/src/lib.rs#L36-L42"
+      },
+      {
+        "sort": 2,
+        "link": "https://github.com/near-examples/token-factory/blob/a56667bf930d2316a911d6cc6f703a5a420739dd/contracts/factory/src/lib.rs#L87-L99"
+      }
+    ],
+    "repo": "https://github.com/near-examples/token-factory",
+    "sdk": { "language": "rust", "version": "near-sdk-rs@3.1.0" },
+    "difficulty": { "min": 1, "max": 3, "near": 2, "language": 1 }
+  },
+  {
+    "tags": ["u128", "u32", "json_types"],
+    "topics": ["Basic Types", "Mutability"],
+    "title": "Basic Number Types",
+    "explainer": "",
+    "code": [
+      {
+        "sort": 1,
+        "link": "https://github.com/near-examples/token-printer/blob/4f2377f1b08943db9c039e081c8d1bc5cdacb3aa/contract-rs/src/lib.rs#L20-L29"
+      },
+      {
+        "sort": 2,
+        "link": "https://github.com/near-examples/token-printer/blob/4f2377f1b08943db9c039e081c8d1bc5cdacb3aa/contract-rs/src/lib.rs#L73-L75"
+      },
+      {
+        "sort": 3,
+        "link": "https://github.com/near-examples/token-printer/blob/4f2377f1b08943db9c039e081c8d1bc5cdacb3aa/contract-rs/src/lib.rs#L77-L79"
+      }
+    ],
+    "repo": "https://github.com/near-examples/token-printer",
+    "sdk": { "language": "rust", "version": "near-sdk-rs@3.1.0" },
+    "difficulty": { "min": 1, "max": 3, "near": 2, "language": 1 }
+  },
+  {
+    "tags": ["nearcore"],
+    "topics": ["Control Flow"],
+    "title": "Processing Transactions and Sending Receipts",
+    "explainer": "",
+    "code": [
+      {
+        "sort": 1,
+        "link": "https://github.com/near/nearcore/blob/9a121f42379d67bcb67d65d9d1137797105c9666/runtime/runtime/src/lib.rs#L1177-L1193"
+      }
+    ],
+    "repo": "https://github.com/near/nearcore",
+    "sdk": { "language": "rust", "version": "near-sdk-rs@3.1.0" },
+    "difficulty": { "min": 1, "max": 3, "near": 3, "language": 1 }
   }
 ]
