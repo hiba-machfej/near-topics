@@ -99,7 +99,6 @@
 </template>
 
 <script>
-import { toRefs } from "vue";
 import { useExamples } from "@/composables/examples";
 
 import rust from "@/assets/rust.png";
@@ -115,9 +114,7 @@ export default {
     },
   }),
   setup(props) {
-    const { topic } = toRefs(props);
-    const examples = useExamples(topic);
-
+    const examples = useExamples(props);
     return { examples };
   },
 };

@@ -1,7 +1,8 @@
-import { ref, onMounted, watch } from "vue";
+import { toRefs, ref, onMounted, watch } from "vue";
 import { findExamples, findExampleById } from "../services/examples";
 
-export const useExamples = (topic) => {
+export const useExamples = (props) => {
+  const { topic } = toRefs(props);
   const examples = ref([]);
 
   onMounted(async () => {
